@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sleep Sound — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #0B1424;
+    --surface: #1A2640;
+    --border: #2A3858;
+    --text: #F2F4F8;
+    --text-secondary: #8B95B0;
+    --text-tertiary: #5A6378;
+    --accent: #6BC9C0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Pretendard Variable", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    line-height: 1.7;
+    padding: 32px 20px 80px;
+  }
+  .container { max-width: 720px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 32px; }
+  h1 { font-size: 32px; font-weight: 600; margin: 0 0 8px; }
+  .subtitle { color: var(--text-secondary); font-size: 14px; margin-bottom: 24px; }
+  .lang-tabs {
+    display: inline-flex;
+    background: var(--surface);
+    border-radius: 9999px;
+    padding: 4px;
+    margin-bottom: 32px;
+  }
+  .lang-tabs button {
+    background: transparent;
+    color: var(--text-secondary);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+  .lang-tabs button.active {
+    background: var(--accent);
+    color: var(--bg);
+  }
+  section { display: none; }
+  section.active { display: block; }
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+  h2:first-child { margin-top: 0; }
+  p, li { color: var(--text); font-size: 15px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  code {
+    background: var(--surface);
+    color: var(--accent);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .meta {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-tertiary);
+    font-size: 13px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Sleep Sound</h1>
+    <div class="subtitle">Privacy Policy · 개인정보처리방침</div>
+    <div class="lang-tabs" role="tablist">
+      <button id="tab-ko" class="active" onclick="showLang('ko')">한국어</button>
+      <button id="tab-en" onclick="showLang('en')">English</button>
+    </div>
+  </header>
+
+  <!-- ─────────────── KOREAN ─────────────── -->
+  <section id="lang-ko" class="active">
+    <h2>1. 요약</h2>
+    <p>Sleep Sound 는 사용자의 개인정보를 수집하지 않습니다. 계정 생성 없이 앱을 사용할 수 있으며, 사운드는 모두 앱에 내장되어 인터넷 연결 없이 재생됩니다.</p>
+
+    <h2>2. 앱이 수집하는 정보</h2>
+    <p>Sleep Sound 자체는 다음 어떤 개인정보도 수집·저장·전송하지 않습니다:</p>
+    <ul>
+      <li>이름, 이메일, 전화번호, 주소</li>
+      <li>위치 정보</li>
+      <li>연락처, 사진, 마이크 등 기기 접근</li>
+      <li>재생 기록 또는 사용 통계 (당사 서버로 전송하는 정보 없음)</li>
+    </ul>
+    <p>사용자의 사운드 선택 · 볼륨 · 재생 상태는 <strong>본인 기기에만</strong> 저장되며 외부로 전송되지 않습니다.</p>
+
+    <h2>3. 제3자 서비스</h2>
+    <p>향후 앱에 광고가 추가될 경우, Google AdMob 서비스가 사용됩니다. AdMob 은 광고 개인화를 위해 익명화된 광고 식별자(AAID) 및 기기 정보를 수집할 수 있습니다. 자세한 내용은 아래 링크를 참고하세요:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob 데이터 처리 안내</a></li>
+    </ul>
+    <p>사용자는 Android 설정 → Google → 광고 에서 광고 개인화를 언제든 비활성화하거나 광고 ID 를 재설정할 수 있습니다.</p>
+
+    <h2>4. 앱 권한 사용 목적</h2>
+    <p>Sleep Sound 가 요청하는 시스템 권한과 그 이유:</p>
+    <ul>
+      <li><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>: 화면이 꺼지거나 다른 앱으로 이동해도 사운드 재생을 유지하기 위해 필요합니다.</li>
+      <li><code>WAKE_LOCK</code>: 재생 중 시스템이 CPU 를 완전히 멈추지 않도록 하기 위해 필요합니다.</li>
+      <li><code>POST_NOTIFICATIONS</code> (Android 13 이상): 재생 상태를 알림으로 표시하고 알림에서 컨트롤할 수 있게 하기 위해 필요합니다.</li>
+      <li><code>SCHEDULE_EXACT_ALARM</code>, <code>USE_EXACT_ALARM</code>: 향후 알람 기능(원하는 시각 재생 시작 등)에 사용됩니다.</li>
+    </ul>
+    <p>인터넷·마이크·위치·카메라·연락처 등에 대한 권한은 요청하지 않습니다.</p>
+
+    <h2>5. 아동의 개인정보</h2>
+    <p>Sleep Sound 는 만 13세 미만 아동을 대상으로 하지 않으며, 아동으로부터 어떠한 개인정보도 의도적으로 수집하지 않습니다.</p>
+
+    <h2>6. 정책 변경</h2>
+    <p>본 개인정보처리방침이 업데이트될 경우 앱 스토어의 개인정보처리방침 링크를 통해 최신 버전을 확인하실 수 있습니다. 주요 변경사항은 앱 업데이트 노트에도 반영됩니다.</p>
+
+    <h2>7. 문의</h2>
+    <p>본 정책 또는 개인정보 처리에 대한 문의는 아래로 연락 주시기 바랍니다:</p>
+    <p><a href="mailto:choegozip@gmail.com">choegozip@gmail.com</a></p>
+
+    <div class="meta">
+      최종 업데이트: 2026-07-23<br>
+      앱 이름: Sleep Sound<br>
+      개발자: choegozip
+    </div>
+  </section>
+
+  <!-- ─────────────── ENGLISH ─────────────── -->
+  <section id="lang-en">
+    <h2>1. Summary</h2>
+    <p>Sleep Sound does not collect any personal information from you. You can use the app without creating an account. All sounds are bundled with the app and play without any internet connection.</p>
+
+    <h2>2. Information the App Collects</h2>
+    <p>Sleep Sound itself does not collect, store, or transmit any of the following:</p>
+    <ul>
+      <li>Name, email, phone number, or address</li>
+      <li>Location</li>
+      <li>Contacts, photos, microphone, or other device data</li>
+      <li>Playback history or usage analytics (nothing is sent to our servers)</li>
+    </ul>
+    <p>Your sound selections, volume, and playback state are stored <strong>only on your device</strong> and are never transmitted externally.</p>
+
+    <h2>3. Third-Party Services</h2>
+    <p>If advertising is added to the app in a future update, Google AdMob will be used. AdMob may collect anonymized advertising identifiers (AAID) and device information for ad personalization. Please refer to:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob data handling</a></li>
+    </ul>
+    <p>You can disable ad personalization or reset your advertising ID at any time in Android Settings → Google → Ads.</p>
+
+    <h2>4. Permissions and Their Purpose</h2>
+    <p>The permissions Sleep Sound requests, and why:</p>
+    <ul>
+      <li><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>: Required to keep playback running when the screen is off or you switch apps.</li>
+      <li><code>WAKE_LOCK</code>: Prevents the CPU from fully sleeping during playback.</li>
+      <li><code>POST_NOTIFICATIONS</code> (Android 13+): Used to display the media notification with playback controls.</li>
+      <li><code>SCHEDULE_EXACT_ALARM</code>, <code>USE_EXACT_ALARM</code>: Reserved for a future alarm feature (start playback at a chosen time).</li>
+    </ul>
+    <p>The app does not request internet, microphone, location, camera, or contacts permissions.</p>
+
+    <h2>5. Children's Privacy</h2>
+    <p>Sleep Sound is not directed at children under 13, and we do not knowingly collect any personal data from children.</p>
+
+    <h2>6. Changes to This Policy</h2>
+    <p>If this policy is updated, the latest version will be available at the URL linked from the Play Store listing. Significant changes will also be mentioned in the app's release notes.</p>
+
+    <h2>7. Contact</h2>
+    <p>For questions about this policy or our data practices, please contact:</p>
+    <p><a href="mailto:choegozip@gmail.com">choegozip@gmail.com</a></p>
+
+    <div class="meta">
+      Last updated: 2026-07-23<br>
+      App: Sleep Sound<br>
+      Developer: choegozip
+    </div>
+  </section>
+</div>
+
+<script>
+  function showLang(lang) {
+    document.getElementById('lang-ko').classList.toggle('active', lang === 'ko');
+    document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+    document.getElementById('tab-ko').classList.toggle('active', lang === 'ko');
+    document.getElementById('tab-en').classList.toggle('active', lang === 'en');
+    document.documentElement.lang = lang;
+    // Persist across reload
+    try { localStorage.setItem('sleepsound_pp_lang', lang); } catch (e) {}
+  }
+  // Initial language: browser preference, else Korean
+  (function() {
+    try {
+      var saved = localStorage.getItem('sleepsound_pp_lang');
+      if (saved) { showLang(saved); return; }
+    } catch (e) {}
+    var pref = (navigator.language || 'en').toLowerCase();
+    showLang(pref.startsWith('ko') ? 'ko' : 'en');
+  })();
+</script>
+</body>
+</html>
