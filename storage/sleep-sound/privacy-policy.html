@@ -121,7 +121,7 @@
       <li><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>: 화면이 꺼지거나 다른 앱으로 이동해도 사운드 재생을 유지하기 위해 필요합니다.</li>
       <li><code>WAKE_LOCK</code>: 재생 중 시스템이 CPU 를 완전히 멈추지 않도록 하기 위해 필요합니다.</li>
       <li><code>POST_NOTIFICATIONS</code> (Android 13 이상): 재생 상태를 알림으로 표시하고 알림에서 컨트롤할 수 있게 하기 위해 필요합니다.</li>
-      <li><code>SCHEDULE_EXACT_ALARM</code>, <code>USE_EXACT_ALARM</code>: 향후 알람 기능(원하는 시각 재생 시작 등)에 사용됩니다.</li>
+      <li><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code>: 밤새 안정적인 재생을 위해 사용자에게 배터리 최적화 예외 설정을 요청합니다. 사용자 동의 없이 자동으로 설정되지 않으며, 첫 실행 시 안내 다이얼로그에서 "허용" 을 눌러야 시스템 팝업이 열립니다.</li>
     </ul>
     <p>인터넷·마이크·위치·카메라·연락처 등에 대한 권한은 요청하지 않습니다.</p>
 
@@ -171,7 +171,7 @@
       <li><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>: Required to keep playback running when the screen is off or you switch apps.</li>
       <li><code>WAKE_LOCK</code>: Prevents the CPU from fully sleeping during playback.</li>
       <li><code>POST_NOTIFICATIONS</code> (Android 13+): Used to display the media notification with playback controls.</li>
-      <li><code>SCHEDULE_EXACT_ALARM</code>, <code>USE_EXACT_ALARM</code>: Reserved for a future alarm feature (start playback at a chosen time).</li>
+      <li><code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code>: Requests a battery optimization exception so overnight playback is not interrupted by the system. Never granted automatically — the app shows a dialog on first launch, and only opens the system prompt if you tap "Allow".</li>
     </ul>
     <p>The app does not request internet, microphone, location, camera, or contacts permissions.</p>
 
